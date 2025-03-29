@@ -17,7 +17,7 @@ const projects = [
     description: 'A full-stack job listing application with user authentication, job search, and application tracking features.',
     image: '/Project2.png',
     github: 'https://github.com/vintage254/job-listing.git',
-    demo: 'https://job-listing-gamma-two.vercel.app',
+    demo: 'https://keajiralink.co.ke/',
     tech: ['Next.js', 'PostgreSQL', 'Prisma', 'NextAuth.js'],
   },
   {
