@@ -9,7 +9,7 @@ const projects = [
     description: 'A Next.js e-commerce platform featuring user authentication, product catalog, shopping cart, and email notifications.',
     image: '/project1.png',
     github: 'https://github.com/vintage254/tuji-beads.git',
-    demo: 'https://tuji-beads.vercel.app',
+    demo: 'https://tuji-beads.vercel.app/',
     tech: ['Next.js', 'Sanity CMS', 'Tailwind CSS', 'Node.js'],
   },
   {
