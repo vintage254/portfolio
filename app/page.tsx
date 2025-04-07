@@ -7,6 +7,7 @@ const Hero = dynamic(() => import('@/components/Hero'), { ssr: false })
 const Stack = dynamic(() => import('@/components/Stack'), { ssr: false })
 const Services = dynamic(() => import('@/components/Services'), { ssr: false })
 const Portfolio = dynamic(() => import('@/components/Portfolio'), { ssr: false })
+const ElevatorPitch = dynamic(() => import('@/components/Elevator_pitch'), { ssr: false })
 const Contact = dynamic(() => import('@/components/Contacts'), { ssr: false })
 
 export default function Page() {
@@ -17,6 +18,7 @@ export default function Page() {
       <Stack />
       <Services />
       <Portfolio />
+      <ElevatorPitch />
       <Contact />
     </main>
   )
