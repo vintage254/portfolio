@@ -91,11 +91,12 @@ const Portfolio = () => {
                       <FaGithub size={24} />
                     </a>
                     <a
-                      href={project.demo}
+                      href={project.isDownloadable ? project.download : project.demo}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-white hover:text-blue-500 transition-colors duration-300"
                       title={project.isDownloadable ? "Download Application" : "View Live Demo"}
+                      download={project.isDownloadable ? "Malbrose POS.exe" : undefined}
                     >
                       {project.isDownloadable ? <FaDownload size={24} /> : <FaExternalLinkAlt size={24} />}
                     </a>
