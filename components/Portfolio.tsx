@@ -29,6 +29,14 @@ const projects = [
     tech: ['React', 'Express.js', 'MongoDB', 'Redux'],
   },
   {
+    title: 'grammarwise',
+    description: 'Grammerwise is a tutoring platform that connects English learners with expert tutors through job listings, application management, and structured verification workflows. If you are testing the platform, note that sign-up will trigger an email workflow ,currently disabled, so while you may see an error, you can still log in using the email you registered with..',
+    image: '/project6.png',
+    github: 'https://github.com/vintage254/grammerwise',
+    demo: 'https://grammerwise.vercel.app/',
+    tech: ["Next.js","TypeScript","Tailwind CSS","ShadCN/UI","Lucide Icons","Redux Toolkit","NextAuth.js","Prisma","PostgreSQL","ImageKit","Resend",],
+  },
+  {
     title: 'Malbrose POS',
     description: 'A Flutter windows Point Of Sale system for managing retail shops with a beautiful UI and real-time updates.',
     image: '/project4.jpeg',
