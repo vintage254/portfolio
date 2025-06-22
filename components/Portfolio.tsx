@@ -10,7 +10,7 @@ const projects = [
     image: '/project1.png',
     github: 'https://github.com/vintage254/tuji-beads.git',
     demo: 'https://tuji-beads.vercel.app/',
-    tech: ['Next.js', 'Sanity CMS', 'Tailwind CSS', 'Node.js'],
+    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Stripe", "React Hook Form", "Framer Motion", "Lucide Icons"],
   },
   {
     title: 'Job Listing Platform',
@@ -18,7 +18,7 @@ const projects = [
     image: '/Project2.png',
     github: 'https://github.com/vintage254/job-listing.git',
     demo: 'https://keajiralink.co.ke/',
-    tech: ['Next.js', 'PostgreSQL', 'Prisma', 'NextAuth.js'],
+    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Prisma", "PostgreSQL", "NextAuth.js", "Zod", "React Hook Form", "ShadCN/UI", "Lucide Icons", "Vercel"],
   },
   {
     title: 'Food Ordering App',
@@ -26,7 +26,7 @@ const projects = [
     image: '/project3.png',
     github: 'https://github.com/sambutracy/food-ordering-app.git',
     demo: 'https://food-ordering-app-frontend-rkad.onrender.com/',
-    tech: ['React', 'Express.js', 'MongoDB', 'Redux'],
+    tech: ["React", "Tailwind CSS", "TypeScript", "Redux Toolkit", "Firebase", "Framer Motion", "React Router", "Vite", "React Icons"],
   },
   {
     title: 'grammarwise',
@@ -42,7 +42,7 @@ const projects = [
     image: '/project4.jpeg',
     github: 'https://github.com/vintage254/malbrose-flutter-app.git',
     download: '/Malbrose%20POS.exe',
-    tech: ['Flutter', 'Dart', 'Firebase', 'Provider'],
+    tech: ["Flutter", "Dart", "Firebase", "Provider", "Google Fonts", "Cloud Firestore", "Android SDK","postgress sql"],
     isDownloadable: true,
   },
   {
@@ -51,7 +51,7 @@ const projects = [
     image: '/project5.png',
     github: 'https://github.com/vintage254/project-management-app.git',
     demo: 'https://synccraft.up.railway.app/',
-    tech: ['React', 'Node.js', 'MongoDB', 'Socket.io'],
+    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Redux Toolkit", "Zustand", "Framer Motion", "React Hook Form", "ShadCN/UI", "Prisma", "PostgreSQL", "NextAuth.js", "Vercel"],
   },
 ]
 
