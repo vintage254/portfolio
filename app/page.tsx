@@ -1,5 +1,6 @@
 import React from 'react'
 import dynamic from 'next/dynamic'
+import WhatsApp from '@/components/WhatApp'
 
 // Dynamically import client components with ssr disabled
 const Navbar = dynamic(() => import('@/components/Navbar'), { ssr: false })
@@ -18,6 +19,7 @@ export default function Page() {
       <Services />
       <Portfolio />
       <ContactFooter />
+      <WhatsApp />
     </main>
   )
 }

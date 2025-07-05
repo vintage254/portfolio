@@ -29,14 +29,14 @@ const ContactFooter = () => {
     {
       icon: Mail,
       label: 'Email',
-      value: 'derricknjuguna@morethancode-labs.com',
-      link: 'mailto:derricknjuguna@morethancode-labs.com'
+      value: 'derricknjuguna414@gmail.com',
+      link: 'derricknjuguna414@gmail.com'
     },
     {
       icon: Phone,
       label: 'Phone',
-      value: '+254 123 456 789',
-      link: 'tel:+254123456789'
+      value: '+254 748322954',
+      link: 'tel:+254748322954'
     },
     {
       icon: MapPin,
