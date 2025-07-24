@@ -1,73 +1,7 @@
 "use client"
 import { motion } from 'framer-motion'
 import { FaGithub, FaExternalLinkAlt, FaDownload } from 'react-icons/fa'
-
-const projects = [
-  {
-    title: 'Tuji Beads E-Commerce',
-    description: 'A Next.js e-commerce platform featuring user authentication, product catalog, shopping cart, and email notifications.',
-    image: '/project1.png',
-    github: 'https://github.com/vintage254/tuji-beads.git',
-    demo: 'https://tuji-beads.vercel.app/',
-    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Stripe", "React Hook Form", "Framer Motion", "Lucide Icons"],
-    category: 'E-commerce'
-  },
-  {
-    title: 'Job Listing Platform',
-    description: 'A full-stack job listing application with user authentication, job search, and application tracking features.',
-    image: '/Project2.png',
-    github: 'https://github.com/vintage254/job-listing.git',
-    demo: 'https://keajiralink.co.ke/',
-    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Prisma", "PostgreSQL", "NextAuth.js", "Zod", "React Hook Form", "ShadCN/UI", "Lucide Icons", "Vercel"],
-    category: 'Platform'
-  },
-  {
-    title: 'Food Ordering App',
-    description: 'A food delivery platform with restaurant listings, menu management, and order tracking system.',
-    image: '/project3.png',
-    github: 'https://github.com/sambutracy/food-ordering-app.git',
-    demo: 'https://food-ordering-app-frontend-rkad.onrender.com/',
-    tech: ["React", "Tailwind CSS", "TypeScript", "Redux Toolkit", "Firebase", "Framer Motion", "React Router", "Vite", "React Icons"],
-    category: 'Mobile App'
-  },
-  {
-    title: 'grammarwise',
-    description: 'Grammerwise is a tutoring platform that connects English learners with expert tutors through job listings, application management, and structured verification workflows.',
-    image: '/project6.png',
-    github: 'https://github.com/vintage254/grammerwise',
-    demo: 'https://grammerwise.vercel.app/',
-    tech: ["Next.js","TypeScript","Tailwind CSS","ShadCN/UI","Lucide Icons","Redux Toolkit","NextAuth.js","Prisma","PostgreSQL","ImageKit","Resend"],
-    category: 'Education'
-  },
-  {
-    title: 'Malbrose POS',
-    description: 'A Flutter windows Point Of Sale system for managing retail shops with a beautiful UI and real-time updates.',
-    image: '/project4.jpeg',
-    github: 'https://github.com/vintage254/malbrose-flutter-app.git',
-    download: '/Malbrose%20POS.exe',
-    tech: ["Flutter", "Dart", "Firebase", "Provider", "Google Fonts", "Cloud Firestore", "Android SDK","postgress sql"],
-    isDownloadable: true,
-    category: 'Desktop App'
-  },
-  {
-    title: 'morethancode',
-    description: 'More Than Code Labs is my digital space where I showcase who I am as a developer, designer, and creative problem solver.',
-    image: '/project7.png',
-    github: 'https://github.com/vintage254/morethancode_labs.git',
-    demo: 'https://morethancode-labs.vercel.app/',
-    tech: ["React", "React DOM", "Vite", "Three.js", "@react-three/fiber", "@react-three/drei", "three-stdlib", "maath", "cobe", "Tailwind CSS", "Framer Motion", "motion", "clsx", "react-responsive", "Lucide React", "ESLint"],
-    category: 'Portfolio'
-  },
-  {
-    title: 'Project Management App',
-    description: 'A collaborative project management tool with task tracking, team management, and real-time updates.',
-    image: '/project5.png',
-    github: 'https://github.com/vintage254/project-management-app.git',
-    demo: 'https://synccraft.up.railway.app/',
-    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Redux Toolkit", "Zustand", "Framer Motion", "React Hook Form", "ShadCN/UI", "Prisma", "PostgreSQL", "NextAuth.js", "Vercel"],
-    category: 'SaaS'
-  },
-]
+import { projects, type Project } from '../constants'
 
 const Portfolio = () => {
   return (

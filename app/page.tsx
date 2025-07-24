@@ -7,7 +7,7 @@ const Navbar = dynamic(() => import('@/components/Navbar'), { ssr: false })
 const Hero = dynamic(() => import('@/components/Hero'), { ssr: false })
 const Stack = dynamic(() => import('@/components/Stack'), { ssr: false })
 const Services = dynamic(() => import('@/components/Services'), { ssr: false })
-const Portfolio = dynamic(() => import('@/components/Portfolio'), { ssr: false })
+const SmallPortfolio = dynamic(() => import('@/components/small-portfolio'), { ssr: false })
 const ContactFooter = dynamic(() => import('@/components/Footer'), { ssr: false })
 
 export default function Page() {
@@ -17,7 +17,7 @@ export default function Page() {
       <Hero />
       <Stack />
       <Services />
-      <Portfolio />
+      <SmallPortfolio />
       <ContactFooter />
       <WhatsApp />
     </main>

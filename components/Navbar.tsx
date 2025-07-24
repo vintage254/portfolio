@@ -5,12 +5,12 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 
 const navlinks = [
-    {title: "Home", path: "#home"},
-    {title: "About", path: "#about"},
-    {title: "Stack", path: "#stack"},
-    {title: "Portfolio", path: "#portfolio"},
-    {title: "Services", path: "#services"},
-    {title: "Contact", path: "#contact"},
+    {title: "Home", path: "/#home"},
+    {title: "About", path: "/#about"},
+    {title: "Stack", path: "/#stack"},
+    {title: "Portfolio", path: "/portfolio"},
+    {title: "Services", path: "/#services"},
+    {title: "Contact", path: "/#contact"},
 ]
 
 const Navbar = () => {

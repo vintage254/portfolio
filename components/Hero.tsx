@@ -9,37 +9,62 @@ const projects = [
     {
       title: "Tuji Beads E-Commerce",
       link: "https://tuji-beads.vercel.app/",
-      thumbnail: "/project1.png"
+      thumbnail: "/projects/project1.png"
     },
     {
       title: "Job Listing Platform",
       link: "https://keajiralink.co.ke/",
-      thumbnail: "/Project2.png"
+      thumbnail: "/projects/project2.png"
     },
     {
       title: "Food Ordering App",
       link: "https://food-ordering-app-frontend-rkad.onrender.com/",
-      thumbnail: "/project3.png"
+      thumbnail: "/projects/project3.png"
     },
     {
       title: "grammarwise",
       link: "https://grammerwise.vercel.app/",
-      thumbnail: "/project6.png"
+      thumbnail: "/projects/project6.png"
     },
     {
       title: "Malbrose POS",
       link: "/Malbrose%20POS.exe",
-      thumbnail: "/project4.jpeg"
+      thumbnail: "/projects/project4.jpeg"
     },
     {
       title: "morethancode",
       link: "https://morethancode-labs.vercel.app/",
-      thumbnail: "/project7.png"
+      thumbnail: "/projects/project7.png"
     },
     {
       title: "Project Management App",
       link: "https://synccraft.up.railway.app/",
-      thumbnail: "/project5.png"
+      thumbnail: "/projects/project5.png"
+    },
+    {
+      title: "Kwa Jose Cocktail Bar",
+      link: "https://kwa-jose.vercel.app/",
+      thumbnail: "/projects/project8.png"
+    },
+    {
+      title: "Belle Fashion Wear",
+      link: "https://bellefashonwear.vercel.app/",
+      thumbnail: "/projects/project9.png"
+    },
+    {
+      title: "Nail Bar Studio",
+      link: "https://nailbar.vercel.app/",
+      thumbnail: "/projects/project10.png"
+    },
+    {
+      title: "Sir Alex Tattoos",
+      link: "https://siralextattoos.vercel.app/",
+      thumbnail: "/projects/project11.png"
+    },
+    {
+      title: "Bliss N Blush Beauty",
+      link: "https://bliss-n-blush.vercel.app/",
+      thumbnail: "/projects/project12.png"
     }
   ];
 
