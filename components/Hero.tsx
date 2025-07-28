@@ -235,7 +235,7 @@ const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 2.2 }}
-              className="flex flex-wrap gap-4"
+              className="flex flex-wrap gap-4 relative z-10"
             >
               <a
                 href="#portfolio"
@@ -249,7 +249,9 @@ const Hero = () => {
               >
                 Contact Me
               </a>
-              <DownloadCVButton />
+              <div className="relative z-20">
+                <DownloadCVButton />
+              </div>
             </motion.div>
           </motion.div>
            

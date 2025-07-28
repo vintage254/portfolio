@@ -8,7 +8,7 @@ const DownloadCVButton: React.FC = () => {
     // Create invisible anchor element
     const link = document.createElement('a');
     link.href = fileUrl;
-    link.setAttribute('download', 'DerrickNjuguna.pdf');
+    link.setAttribute('download', 'DerrickNjuguna_CV.pdf');
     link.setAttribute('target', '_blank');
     link.setAttribute('rel', 'noopener noreferrer');
     
@@ -21,7 +21,7 @@ const DownloadCVButton: React.FC = () => {
   return (
     <button
       onClick={handleDownload}
-      className="group relative inline-flex items-center justify-center overflow-hidden rounded-md px-6 py-3 font-medium tracking-tighter text-white bg-gray-800 border border-gray-700 hover:border-blue-500 transition-all duration-300 ease-out"
+      className="group relative inline-flex items-center justify-center overflow-hidden rounded-md px-6 py-3 font-medium tracking-tighter text-white bg-gray-800 border border-gray-700 hover:border-blue-500 transition-all duration-300 ease-out cursor-pointer"
       aria-label="Download Resume"
     >
       <span className="absolute inset-0 rounded-md bg-gradient-to-br from-blue-600 via-blue-500 to-cyan-400 opacity-0 group-hover:opacity-100 transition-all duration-300 ease-out"></span>
