@@ -15,7 +15,7 @@ const projects = [
     {
       title: "Job Listing Platform",
       link: "https://keajiralink.co.ke/",
-      thumbnail: "/projects/project2.png"
+      thumbnail: "/projects/Project2.png"
     },
     {
       title: "Food Ordering App",
