@@ -238,7 +238,7 @@ const Hero = () => {
               className="flex flex-wrap gap-4 relative z-10"
             >
               <a
-                href="#portfolio"
+                href="/portfolio"
                 className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-full transition-colors duration-300 hover:scale-105 transform"
               >
                 View My Work
