@@ -2,6 +2,7 @@
 import { motion } from 'framer-motion'
 import { CodeBracketIcon, CommandLineIcon, DevicePhoneMobileIcon } from '@heroicons/react/24/outline'
 import { useState } from 'react';
+import { World, GlobeConfig } from './globe';
 import WhatsApp from '@/components/WhatApp';
 
 const services = [
@@ -29,8 +30,96 @@ const services = [
 ]
 
 const Services = () => {
+  const globeConfig: GlobeConfig = {
+    pointSize: 4,
+    globeColor: "#1d072e",
+    showAtmosphere: true,
+    atmosphereColor: "#ffffff",
+    atmosphereAltitude: 0.1,
+    emissive: "#000000",
+    emissiveIntensity: 0.1,
+    shininess: 0.9,
+    polygonColor: "rgba(255,255,255,0.7)",
+    ambientLight: "#383838",
+    directionalLeftLight: "#ffffff",
+    directionalTopLight: "#ffffff",
+    pointLight: "#ffffff",
+    arcTime: 1000,
+    arcLength: 0.9,
+    rings: 1,
+    maxRings: 3,
+    initialPosition: { lat: 22.3193, lng: 114.1694 },
+    autoRotate: true,
+    autoRotateSpeed: 0.9,
+  };
+  const colors = ["#06b6d4", "#3b82f6", "#6366f1"];
+  const sampleArcs = [
+    {
+      order: 1,
+      startLat: -19.885592,
+      startLng: -43.951191,
+      endLat: -22.9068,
+      endLng: -43.1729,
+      arcAlt: 0.1,
+      color: colors[0],
+    },
+    {
+      order: 1,
+      startLat: 28.6139,
+      startLng: 77.209,
+      endLat: 3.139,
+      endLng: 101.6869,
+      arcAlt: 0.2,
+      color: colors[1],
+    },
+    {
+      order: 1,
+      startLat: -19.885592,
+      startLng: -43.951191,
+      endLat: 34.0522,
+      endLng: -118.2437,
+      arcAlt: 0.2,
+      color: colors[2],
+    },
+    {
+      order: 2,
+      startLat: 1.3521,
+      startLng: 103.8198,
+      endLat: -22.9068,
+      endLng: -43.1729,
+      arcAlt: 0.5,
+      color: colors[Math.floor(Math.random() * (colors.length - 1))],
+    },
+    {
+      order: 2,
+      startLat: 51.5072,
+      startLng: -0.1276,
+      endLat: 3.139,
+      endLng: 101.6869,
+      arcAlt: 0.2,
+      color: colors[Math.floor(Math.random() * (colors.length - 1))],
+    },
+    {
+      order: 3,
+      startLat: -22.9068,
+      startLng: -43.1729,
+      endLat: 51.5072,
+      endLng: -0.1276,
+      arcAlt: 0.3,
+      color: colors[Math.floor(Math.random() * (colors.length - 1))],
+    },
+    {
+      order: 3,
+      startLat: 28.6139,
+      startLng: 77.209,
+      endLat: 51.5072,
+      endLng: -0.1276,
+      arcAlt: 0.3,
+      color: colors[Math.floor(Math.random() * (colors.length - 1))],
+    },
+  ];
   return (
-    <section id="services" className="py-20 bg-black text-white relative overflow-hidden">
+    <section id="services" className="relative py-20 bg-black text-white overflow-hidden">
       {/* Animated Background */}
       <div className="absolute inset-0">
         <div className="absolute top-1/4 left-0 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl animate-pulse" />
@@ -114,13 +203,39 @@ const Services = () => {
                   className="mt-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                   whileHover={{ scale: 1.05 }}
                 >
-                  <button className={`w-full py-2 px-4 rounded-lg bg-gradient-to-r ${service.gradient} text-white font-medium hover:shadow-lg transition-all duration-300`}>
+                  <a 
+                    href="#contacts"
+                    className={`block text-center w-full py-2 px-4 rounded-lg bg-gradient-to-r ${service.gradient} text-white font-medium hover:shadow-lg transition-all duration-300`}
+                  >
                     Learn More
-                  </button>
+                  </a>
                 </motion.div>
               </motion.div>
             </motion.div>
           ))}
+        </div>
+        
+        {/* Globe Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          viewport={{ once: true }}
+          className="mt-20 text-center"
+        >
+          <motion.h3 
+            className="text-2xl sm:text-3xl font-bold mb-4 bg-gradient-to-r from-blue-400 via-purple-400 to-green-400 bg-clip-text text-transparent"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+          >
+            I Deliver My Services Worldwide
+          </motion.h3>
+          <p className="text-gray-400 text-lg mb-8">Connecting with clients across the globe</p>
+        </motion.div>
+        
+        <div className="relative h-[400px] w-full max-w-2xl mx-auto">
+          <World globeConfig={globeConfig} data={sampleArcs} />
         </div>
       </div>
     </section>

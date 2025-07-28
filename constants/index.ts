@@ -23,7 +23,7 @@ export const projects: Project[] = [
   {
     title: 'Job Listing Platform',
     description: 'A full-stack job listing application with user authentication, job search, and application tracking features.',
-    image: '/projects/project2.jpg',
+    image: '/projects/Project2.png',
     github: 'https://github.com/vintage254/job-listing.git',
     demo: 'https://keajiralink.co.ke/',
     tech: ["Next.js", "TypeScript", "Tailwind CSS", "Prisma", "PostgreSQL", "NextAuth.js", "Zod", "React Hook Form", "ShadCN/UI", "Lucide Icons", "Vercel"],
@@ -65,15 +65,6 @@ export const projects: Project[] = [
     demo: 'https://morethancode-labs.vercel.app/',
     tech: ["React", "React DOM", "Vite", "Three.js", "@react-three/fiber", "@react-three/drei", "three-stdlib", "maath", "cobe", "Tailwind CSS", "Framer Motion", "motion", "clsx", "react-responsive", "Lucide React", "ESLint"],
     category: 'Portfolio'
-  },
-  {
-    title: 'Project Management App',
-    description: 'A collaborative project management tool with task tracking, team management, and real-time updates.',
-    image: '/projects/project5.png',
-    github: 'https://github.com/vintage254/project-management-app.git',
-    demo: 'https://synccraft.up.railway.app/',
-    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Redux Toolkit", "Zustand", "Framer Motion", "React Hook Form", "ShadCN/UI", "Prisma", "PostgreSQL", "NextAuth.js", "Vercel"],
-    category: 'SaaS'
   },
   {
     title: 'Kwa Jose Cocktail Bar',

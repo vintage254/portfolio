@@ -12,7 +12,7 @@ const ContactFooter = dynamic(() => import('@/components/Footer'), { ssr: false 
 
 export default function Page() {
   return (
-    <main className="bg-black">
+    <main className="relative bg-black">
       <Navbar />
       <Hero />
       <Stack />
