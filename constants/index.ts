@@ -23,7 +23,7 @@ export const projects: Project[] = [
   {
     title: 'Job Listing Platform',
     description: 'A full-stack job listing application with user authentication, job search, and application tracking features.',
-    image: '/projects/project2.png',
+    image: '/projects/project2.jpg',
     github: 'https://github.com/vintage254/job-listing.git',
     demo: 'https://keajiralink.co.ke/',
     tech: ["Next.js", "TypeScript", "Tailwind CSS", "Prisma", "PostgreSQL", "NextAuth.js", "Zod", "React Hook Form", "ShadCN/UI", "Lucide Icons", "Vercel"],
