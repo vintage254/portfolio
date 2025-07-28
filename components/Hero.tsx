@@ -3,6 +3,7 @@ import { motion, useScroll, useTransform, useSpring, MotionValue } from 'framer-
 import Image from 'next/image'
 import { useEffect, useRef, memo } from 'react'
 import { gsap } from 'gsap'
+import DownloadCVButton from './cv'
 
 // Projects data
 const projects = [
@@ -37,9 +38,9 @@ const projects = [
       thumbnail: "/projects/project7.png"
     },
     {
-      title: "Project Management App",
-      link: "https://synccraft.up.railway.app/",
-      thumbnail: "/projects/project5.png"
+      title: "The Street Clothing",
+      link: "https://the-street-clothing.vercel.app/",
+      thumbnail: "/projects/project13.png"
     },
     {
       title: "Kwa Jose Cocktail Bar",
@@ -248,6 +249,7 @@ const Hero = () => {
               >
                 Contact Me
               </a>
+              <DownloadCVButton />
             </motion.div>
           </motion.div>
            

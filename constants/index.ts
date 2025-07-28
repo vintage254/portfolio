@@ -120,4 +120,13 @@ export const projects: Project[] = [
     tech: ["Next.js", "TypeScript", "Tailwind CSS", "Booking System", "Beauty Services", "Luxury Design"],
     category: 'Beauty & Wellness'
   },
+  {
+    title: 'The Street Clothing',
+    description: 'A trendy urban fashion store showcasing bold streetwear styles. Features a sleek design, product catalog, and responsive layout ideal for fashion-forward users.',
+    image: '/projects/project13.png',
+    github: 'https://github.com/vintage254/the-street-clothing.git',
+    demo: 'https://the-street-clothing.vercel.app/',
+    tech: ["Next.js", "Tailwind CSS", "TypeScript", "Responsive Design", "Streetwear", "Modern UI"],
+    category: 'Fashion & Apparel'
+  }
 ];
