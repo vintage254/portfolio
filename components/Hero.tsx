@@ -207,13 +207,13 @@ const Hero = () => {
       gsap.to(characters, {
         opacity: 1,
         y: 0,
-        duration: 0.8,
+        duration: 0.5,
         ease: "back.out(1.7)",
         stagger: {
-          amount: 1.2,
+          amount: 0.6,
           from: "start"
         },
-        delay: 0.3
+        delay: 0.1
       })
     }
   }, [])
