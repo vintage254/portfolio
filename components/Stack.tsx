@@ -1,6 +1,7 @@
 "use client"
 import { motion } from 'framer-motion'
 import { FaCode, FaServer, FaDatabase, FaCogs, FaBrain, FaTools } from 'react-icons/fa'
+import Particles from './ui/particles'
 
 const categories = [
   {
@@ -76,6 +77,18 @@ const Stack = () => {
       <div className="absolute inset-0">
         <div className="absolute top-0 left-1/4 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl animate-pulse" />
         <div className="absolute bottom-0 right-1/4 w-72 h-72 bg-purple-500/10 rounded-full blur-3xl animate-pulse delay-1000" />
+        <div style={{ width: '100%', height: '600px', position: 'absolute', top: 0, left: 0 }}>
+          <Particles
+            particleColors={['#ffffff', '#ffffff']}
+            particleCount={200}
+            particleSpread={10}
+            speed={0.1}
+            particleBaseSize={100}
+            moveParticlesOnHover={true}
+            alphaParticles={false}
+            disableRotation={false}
+          />
+        </div>
       </div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -153,4 +166,4 @@ const Stack = () => {
   )
 }
 
-export default Stack
+export default Stack;
